@@ -1,0 +1,39 @@
+/* Assuming these styles are part of style-012.css */
+
+/* Styling for the mobile navigation toggle */
+.togudj {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Styling for the container of mobile navigation links */
+.nzgprf {
+    display: none; /* Initially hide the mobile navigation links */
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+/* Styling for the visible state of mobile navigation links */
+.icaqwi {
+    display: block !important; /* Make sure it's displayed when the toggle is clicked */
+}
+
+/* Animation for sliding down the mobile navigation links */
+.nzgprf {
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
